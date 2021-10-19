@@ -605,7 +605,7 @@ void main_widget::open_image(){
 	for( auto f : formats )
 		filter += " *." + f;
 	
-	process_urls( QFileDialog::getOpenFileNames( this, "Select images", "", "Images (" + filter + ")" ) );
+	process_urls( QFileDialog::getOpenFileNames( this, "Select images", "", "Images (" + filter + ");; Videos (*.mkv *.mp4 *.webm)" ) );
 }
 
 void main_widget::toggleMenubar(){
